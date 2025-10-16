@@ -1,5 +1,28 @@
+@font-face {
+  font-family: 'League Gothic Regular';
+  src: url('/fonts/league-ghotic/LeagueGothic-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url('/fonts/league-ghotic/LeagueGothic-CondensedRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Gothic Regular';
+  src: url('/fonts/league-ghotic/LeagueGothic-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
 nav.navbar {
-    box-shadow: 0px 5px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    /*box-shadow: 0px 5px 10px 0px;*/
 }
 
 .navbar>.container-fluid {
@@ -7,6 +30,7 @@ nav.navbar {
     grid-template-columns: 1fr 2fr 1fr;
     justify-items: center;
 }
+
 
 .navbar-nav {
     font-family: 'Electrolize', sans-serif;
@@ -20,12 +44,12 @@ button.btn {
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 0 10px #8AD886;
 }
 
 button.btn:hover {
     background-color: #6dad69;
     transform: scale(1.05);
+    box-shadow: 0 0 10px #8AD886;
 }
 
 button.btn:active {
@@ -34,6 +58,37 @@ button.btn:active {
 }
 
 header {
-    height: 500px;
-    background-image: ;
+    background-image: url(../images/inicio/header.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+}
+
+.presentacion {
+    margin: 10%;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.50);
+    color: white;
+}
+
+.presentacion h1 {
+    font-family: 'League Gothic Regular', sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.presentacion h2 {
+    font-family: 'League Gothic Regular', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.presentacion h3 {
+    font-family: 'League Gothic Regular', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 55px;
 }
