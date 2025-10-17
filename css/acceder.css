@@ -14,7 +14,7 @@ nav.navbar {
 }
 
 button.btn {
-    background-color: #8ad886;
+    background-color: #8AD886;
     margin: 0px 10px 0px;
     border-radius: 20px;
     font-family: 'League Spartan', sans-serif;
@@ -35,8 +35,4 @@ button.btn:active {
 
 .image-sobre-nosotros {
     width: 85%;
-}
-
-.nuestra-mision {
-    border-radius: 9%;
 }
