@@ -37,7 +37,7 @@ nav.navbar {
     gap: 30px;
 }
 
-button.btn {
+a.btn {
     background-color: #8AD886;
     margin: 0px 10px 0px;
     border-radius: 20px;
@@ -46,31 +46,28 @@ button.btn {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button.btn:hover {
+a.btn:hover {
     background-color: #6dad69;
     transform: scale(1.05);
     box-shadow: 0 0 10px #8AD886;
 }
 
-button.btn:active {
+a.btn:active {
     background-color: #6dad69 !important;
     transform: scale(1.05);
 }
 
-header {
-    background-image: url(../images/inicio/header.png);
+.presentacion {
+    padding: 8%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../images/inicio/header.jpg);
     background-size: 100%;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100%;
     background-position: center;
-}
-
-.presentacion {
-    margin: 10%;
-    padding: 50px 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.50);
     color: white;
+    text-shadow: -4px 8px 2px black;
 }
 
 .presentacion h1 {
@@ -91,4 +88,13 @@ header {
     font-weight: 400;
     font-style: italic;
     font-size: 55px;
+    color: #8AD886;
+}
+
+.parte1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 6%;
+    justify-items: center;
+    align-items: center;
 }
