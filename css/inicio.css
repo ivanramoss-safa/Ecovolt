@@ -158,11 +158,12 @@ p {
     border-radius: 20px;
     box-shadow: 0px 0px 10px 1px;
     margin: 3%;
-    padding: 2% 8% 10%;
+    padding: 2% 10% 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    transition: background 1s ease;
 }
 
 .servicios img {
@@ -177,4 +178,237 @@ p {
 
 .servicios p {
     color: black;
+}
+
+.particulares:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../images/inicio/particulares-inicio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.servicios div:hover h1,
+.servicios div:hover p {
+    color: white !important;
+    text-shadow: -3px 4px 2px black;
+}
+
+.servicios div:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.comunidad-vecinos:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../images/inicio/comunidad-inicio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.empresas:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../images/inicio/empresa-inicio.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parte3 {
+    padding: 5%;
+    background-image: linear-gradient(#0c501fcf, #0c501fcf), url(../images/inicio/fondo-parte3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 6% 0;
+}
+
+.razones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.razones img {
+    width: 100px;
+}
+
+.razones>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white !important;
+    padding: 10% 5%;
+    font-family: 'Kreon', serif;
+    gap: 10px;
+}
+
+.razones p {
+    color: white !important;
+    font-size: 20px;
+}
+
+.razon1, .razon3 {
+    background-color: #39A557;
+}
+
+.razon1 {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.razon2, .razon4 {
+    background-color: #257E3D;
+}
+
+.razon4 {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.razones>div>div {
+    padding: 20px;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+.parte3 h1 {
+    margin-bottom: 5% !important;
+    font-size: 45px;
+    color: white !important;
+    text-shadow: -3px 4px 2px black;
+}
+
+.parte4 {
+    margin: 6%;
+    text-align: center;
+}
+
+.clientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.clientes img {
+    width: auto;
+    height: 150px;
+    margin-bottom: 5%;
+}
+
+.clientes div {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.clientes p {
+    font-family: 'League Gothic Regular', sans-serif;
+    margin: 0;
+}
+
+.clientes div p:last-of-type {
+    color: black !important;
+    font-size: 20px;
+    font-family: 'Kreon', serif;
+}
+
+.parte5 {
+    padding: 8%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url(../images/inicio/fondo-parte5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cambio {
+    background-color: rgba(0, 0, 0, 0.50);
+    margin: 2% 12%;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+.cambio h1 {
+    font-family: 'League Gothic Regular', sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    color: white !important;
+}
+
+.cambio p {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+.cambio a {
+    transform: scale(1.50);
+    margin-top: 5%;
+}
+
+.cambio a:hover {
+    transform: scale(1.55);
+}
+
+.cambio span {
+    color: #8AD886;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #003936;
+    color: white;
+    padding: 5%;
+    gap: 10%;
+}
+
+
+.logo-footer {
+    background-color: white;
+    padding: 5%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.logo-footer img{
+    width: 90%;
+}
+
+.logo-footer {
+    background-color: white;
+    padding: 5%;
+    border-radius: 100%;
+}
+
+footer p, footer a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Kreon', serif;
+}
+
+footer h1 {
+    font-family: 'League Gothic Regular', sans-serif;
+    color: white !important;
+}
+
+.footer2 div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+.footer2 p {
+    margin: 0 !important;
+}
+
+.footer3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
 }
