@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'League Gothic Regular';
+  src: url('/fonts/league-ghotic/LeagueGothic-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url('/fonts/league-ghotic/LeagueGothic-CondensedRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Gothic Regular';
+  src: url('/fonts/league-ghotic/LeagueGothic-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+nav.navbar.sticky-top {
+    background-color: white;
+    transition: all 0.4s ease;
+}
+
+.navbar-scrolled {
+    border-radius: 100px;
+    box-shadow: 0 4px 15px 3px;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px);
+    margin: 0 5%;
+    top: 10px !important;
+}
+
+.navbar>.container-fluid {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+}
+
+
+.navbar-nav {
+    font-family: 'Electrolize', sans-serif;
+    gap: 30px;
+}
+
+.nav-link {
+    color: black !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: #8AD886;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+a.btn {
+    background-color: #8AD886;
+    margin: 0px 10px 0px;
+    border-radius: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: black;
+}
+
+a.btn:hover {
+    background-color: #6dad69;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #8AD886;
+}
+
+a.btn:active {
+    background-color: #6dad69 !important;
+    transform: scale(1.05);
+}
+
+h1 {
+    padding-top: 3%;
+    font-family: 'League Gothic Regular', sans-serif;
+    font-size: 100px !important;
+    font-style: normal;
+    font-weight: 700;
+    color: black !important;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 400;
+    font-size: 30px !important;
+    text-align: center;
+}
+
+p {
+    font-family: 'League Spartan', sans-serif;
+}
+
+p.tipo1 {
+    font-weight: 400;
+    color: #6C756A;
+    font-size: 20px;
+}
+
+p.tipo2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.underline {
+    width: 25%;
+    height: 10px;
+    background-color: #8AD886;
+    margin: 0 auto 20px;
+    border-radius: 50px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5%;
+    margin: 6%;
+}
+
+.tarjetas>div {
+    padding: 25px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid lightgray;    
+}
+
+.tarjetas>div:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.tarjeta1 {
+    background-image: url(../images/panel-clientes/solar_power_100dp_000000_FILL0_wght400_GRAD0_opsz48.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 25%;
+    background-position-x: 90%;
+}
+
+.tarjeta2 {
+    background-image: url(../images/panel-clientes/bolt_48dp_000000_FILL0_wght400_GRAD0_opsz48.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 25%;
+    background-position-x: 90%;
+}
+
+.tarjeta3 {
+    background-image: url(../images/panel-clientes/trending_down_100dp_000000_FILL0_wght400_GRAD0_opsz48.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 25%;
+    background-position-x: 90%;
+}
+
+.tarjeta4 {
+    background-image: url(../images/panel-clientes/nest_eco_leaf_100dp_000000_FILL0_wght400_GRAD0_opsz48.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 25%;
+    background-position-x: 90%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #003936;
+    color: white;
+    padding: 5%;
+    gap: 7%;
+}
+
+
+.logo-footer {
+    background-color: white;
+    padding: 5%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.logo-footer img{
+    width: 90%;
+}
+
+.logo-footer {
+    background-color: white;
+    padding: 5%;
+    border-radius: 100%;
+}
+
+footer p, footer a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Kreon', serif;
+}
+
+footer h1 {
+    font-family: 'League Gothic Regular', sans-serif;
+    color: white !important;
+}
+
+.footer2 div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+.footer2 p {
+    margin: 0 !important;
+}
+
+.footer3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}

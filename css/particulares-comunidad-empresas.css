@@ -1,0 +1,332 @@
+@font-face {
+  font-family: 'League Gothic Regular';
+  src: url('/fonts/league-ghotic/LeagueGothic-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url('/fonts/league-ghotic/LeagueGothic-CondensedRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Gothic Regular';
+  src: url('/fonts/league-ghotic/LeagueGothic-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+nav.navbar.sticky-top {
+    background-color: white;
+    transition: all 0.4s ease;
+}
+
+.navbar-scrolled {
+    border-radius: 100px;
+    box-shadow: 0 4px 15px 3px;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px);
+    margin: 0 5%;
+    top: 10px !important;
+}
+
+.navbar>.container-fluid {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+}
+
+
+.navbar-nav {
+    font-family: 'Electrolize', sans-serif;
+    gap: 30px;
+}
+
+.nav-link {
+    color: black !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: #8AD886;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+a.btn {
+    background-color: #8AD886;
+    margin: 0px 10px 0px;
+    border-radius: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: black;
+}
+
+a.btn:hover {
+    background-color: #6dad69;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #8AD886;
+}
+
+a.btn:active {
+    background-color: #6dad69 !important;
+    transform: scale(1.05);
+}
+
+.presentacion {
+    padding: 10% 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    text-align: center;
+    color: white !important;
+    text-shadow: -4px 8px 2px black;
+}
+
+.presentacion.particulares {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../images/particulares-comunidad-empresas/fondo-particulares.jpg);
+}
+
+.presentacion.comunidad {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../images/particulares-comunidad-empresas/fondo-comunidad-vecinos.jpg);
+}
+
+.presentacion.empresas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../images/particulares-comunidad-empresas/fondo-empresas.jpeg);
+}
+
+.presentacion h1 {
+    font-family: 'League Gothic Regular', sans-serif;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 700;
+    color: white !important;
+}
+
+.presentacion h2 {
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.underline {
+    width: 25%;
+    height: 10px;
+    background-color: #8AD886;
+    margin: 0 auto 20px;
+    border-radius: 50px;
+}
+
+.ventajas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 5%;
+    position: relative;
+    bottom: 70px;
+    gap: 5%;
+}
+
+.ventajas>div {
+    padding: 10% 10% 40%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ventajas>div:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.ventajas .underline {
+    margin: 6% 0;
+    border-radius: 5px;
+    height: 5px;
+    background-color: #8AD886;
+    width: 25%;
+    transition: width 0.4s ease;
+}
+
+.ventajas>div:hover .underline {
+    width: 70%;
+}
+
+.ventajas h2 {
+    font-family: 'League Gothic Regular', sans-serif;
+    font-size: 35px;
+    transition: all 0.4s ease;
+}
+
+.ventajas>div:hover h2 {
+    text-shadow: 2px 2px 6px #8AD886;
+    transform: translateY(-5px);
+}
+
+.ventaja1 {
+    background-image: url(../images/particulares-comunidad-empresas/icons8-herramienta-100.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 35%;
+    background-position-y: 90%;
+    background-position-x: 90%;
+}
+
+.ventaja2 {
+    background-image: url(../images/particulares-comunidad-empresas/icons8-grafico-100.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 45%;
+}
+
+.ventaja3 {
+    background-image: url(../images/particulares-comunidad-empresas/energy_savings_leaf.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 45%;
+}
+
+.ventaja4 {
+    background-image: url(../images/particulares-comunidad-empresas/solar_power_100dp_6C756A59_FILL0_wght400_GRAD0_opsz48.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 45%;
+}
+
+.parte1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 6% 6%;
+    justify-items: center;
+    align-items: center;
+}
+
+.parte1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.parte1 h3 {
+    font-family: 'League Gothic Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6C756A;
+    border-left: 2px solid #6C756A;
+    padding-left: 4px;
+}
+
+h1 {
+    font-family: 'Electrolize', sans-serif;
+    color: black !important;
+}
+
+.parte1 span {
+    color: #257E3D;
+}
+
+p {
+    font-family: 'Kreon', serif;
+    color: #6C756A;
+    font-size: 25px;
+}
+
+.introduccion-quienes-somos {
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-consulta2 {
+    align-self: center;
+    font-size: 20px !important;
+    margin: 0 !important;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5%;
+    height: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #003936;
+    color: white;
+    padding: 5%;
+    gap: 7%;
+}
+
+
+.logo-footer {
+    background-color: white;
+    padding: 5%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.logo-footer img{
+    width: 90%;
+}
+
+.logo-footer {
+    background-color: white;
+    padding: 5%;
+    border-radius: 100%;
+}
+
+footer p, footer a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Kreon', serif;
+}
+
+footer h1 {
+    font-family: 'League Gothic Regular', sans-serif;
+    color: white !important;
+}
+
+.footer2 div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+.footer2 p {
+    margin: 0 !important;
+}
+
+.footer3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
