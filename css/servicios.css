@@ -36,3 +36,24 @@ button.btn:active {
 .image-sobre-nosotros {
     width: 85%;
 }
+
+a.btn {
+    background-color: #8AD886;
+    margin: 0px 10px 0px;
+    border-radius: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: black;
+}
+
+a.btn:hover {
+    background-color: #6dad69;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #8AD886;
+}
+
+a.btn:active {
+    background-color: #6dad69 !important;
+    transform: scale(1.05);
+}

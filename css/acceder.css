@@ -1,5 +1,36 @@
-nav.navbar {
-    box-shadow: 0px 5px 10px 0px;
+@font-face {
+  font-family: 'League Gothic Regular';
+  src: url('/fonts/league-ghotic/LeagueGothic-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url('/fonts/league-ghotic/LeagueGothic-CondensedRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Gothic Regular';
+  src: url('/fonts/league-ghotic/LeagueGothic-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+nav.navbar.sticky-top {
+    background-color: white;
+    transition: all 0.4s ease;
+}
+
+.navbar-scrolled {
+    border-radius: 100px;
+    box-shadow: 0 4px 15px 3px;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px);
+    margin: 0 5%;
+    top: 10px !important;
 }
 
 .navbar>.container-fluid {
@@ -8,9 +39,65 @@ nav.navbar {
     justify-items: center;
 }
 
+
 .navbar-nav {
     font-family: 'Electrolize', sans-serif;
     gap: 30px;
+}
+
+.nav-link {
+    color: black !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: #8AD886;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+a.btn {
+    background-color: #8AD886;
+    margin: 0px 10px 0px;
+    border-radius: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: black;
+}
+
+a.btn:hover {
+    background-color: #6dad69;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #8AD886;
+}
+
+a.btn:active {
+    background-color: #6dad69 !important;
+    transform: scale(1.05);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #003936;
+    color: white;
+    padding: 5%;
+    gap: 7%;
 }
 
 button.btn {
@@ -33,6 +120,178 @@ button.btn:active {
     transform: scale(1.05);
 }
 
-.image-sobre-nosotros {
-    width: 85%;
+.logo-footer {
+    background-color: white;
+    padding: 5%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 5%;
 }
+
+.logo-footer img{
+    width: 90%;
+}
+
+.logo-footer {
+    background-color: white;
+    padding: 5%;
+    border-radius: 100%;
+}
+
+footer p, footer a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Kreon', serif;
+}
+
+footer h1 {
+    font-family: 'League Gothic Regular', sans-serif;
+    color: white !important;
+}
+
+.footer2 div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+.footer2 p {
+    margin: 0 !important;
+}
+
+.footer3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+@media (max-width: 1024px) {
+
+  nav.navbar.sticky-top {
+    padding: 10px 20px;
+  }
+
+  .navbar > .container-fluid {
+    grid-template-columns: 1fr 1fr; /* Logo + menú */
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    gap: 15px;
+  }
+
+  a.btn {
+    margin: 5px;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  main .card {
+    width: 70% !important;
+    margin: 0 auto;
+  }
+
+  main {
+    padding: 15% 5%;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  footer h1 {
+    font-size: 22px;
+  }
+
+  footer p, footer a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .navbar > .container-fluid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+  }
+
+  a.btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  main {
+    padding: 25% 5%;
+    background-position: center;
+  }
+
+  main .card {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  main h1 {
+    font-size: 28px;
+  }
+
+  main h3 {
+    font-size: 18px;
+  }
+
+  form .mb-3 {
+    width: 100% !important;
+  }
+
+  button.btn {
+    width: 100%;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer1, .footer2, .footer3 {
+    align-items: center;
+  }
+
+  .footer2 div {
+    justify-content: center;
+  }
+
+  footer h1 {
+    font-size: 20px;
+  }
+
+  footer p, footer a {
+    font-size: 15px;
+  }
+
+  .logo-footer {
+    width: 60%;
+    margin: 0 auto 5%;
+  }
+}
+
